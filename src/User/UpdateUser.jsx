@@ -79,9 +79,9 @@ const UpdateUser = () => {
               required
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-4 overflow-hidden h-[100px]">
             {/* Display existing image */}
-            {imageUrl && <img src={imageUrl} alt="User" className="w-full h-auto mb-4" />}
+            {imageUrl && <img src={imageUrl} alt="User" className="w-full h-[150px] mb-4" />}
           </div>
           <div className="mb-4">
             <label className="block text-gray-700">+ Add Your Image</label>
@@ -91,7 +91,6 @@ const UpdateUser = () => {
               className="w-full mt-1"
             />
           </div>
-
           <button
             type="submit"
             className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
