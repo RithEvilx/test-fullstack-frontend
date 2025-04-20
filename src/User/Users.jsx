@@ -8,7 +8,7 @@ const Users = () => {
 
   useEffect(() => {
     axios
-      .get("https://test-fullstack-backend-9431.onrender.com")
+      .get("https://test-fullstack-backend-z3jh.onrender.com")
       .then((result) => {
         setUsers(result.data);
       })
@@ -18,7 +18,7 @@ const Users = () => {
   // Handle Delete
   const handleDelete = (id) => {
     axios
-      .delete("https://test-fullstack-backend-9431.onrender.com/deleteUser/" + id)
+      .delete("https://test-fullstack-backend-z3jh.onrender.com/deleteUser/" + id)
       .then((res) => {
         console.log(res);
         window.location.reload();
@@ -54,7 +54,7 @@ const Users = () => {
                       height: "20px",
                       objectFit: "cover",
                     }}
-                    src={`https://test-fullstack-backend-9431.onrender.com/` + user.image}
+                    src={`https://test-fullstack-backend-z3jh.onrender.com/` + user.image}
                     alt="image"
                   />
                 </td>
@@ -79,7 +79,6 @@ const Users = () => {
           </tbody>
         </table>
       </div>
-      <Link to="/uploadimage">Upload Image</Link>
     </div>
   );
 };

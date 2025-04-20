@@ -10,7 +10,7 @@ const CreateUser = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://test-fullstack-backend-9431.onrender.com/createUser", { name, email })
+      .post("https://test-fullstack-backend-z3jh.onrender.com/createUser", { name, email })
       .then((result) => console.log(result))
       .catch((err) => console.log(err));
     navigate("/");

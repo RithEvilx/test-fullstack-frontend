@@ -12,12 +12,12 @@ const UpdateUser = () => {
 
   useEffect(() => {
     axios
-      .get("https://test-fullstack-backend-9431.onrender.com/getUser/" + id)
+      .get("https://test-fullstack-backend-z3jh.onrender.com/getUser/" + id)
       .then((result) => {
         setName(result.data.name);
         setEmail(result.data.email);
         setFile(result.data.image); // Assuming the image field is 'image'
-        setImageUrl(result.data.image ? `https://test-fullstack-backend-9431.onrender.com/images/${result.data.image}` : ''); // Set image URL
+        setImageUrl(result.data.image ? `https://test-fullstack-backend-z3jh.onrender.com/images/${result.data.image}` : ''); // Set image URL
       })
       .catch((err) => console.log(err));
   }, [id]);
@@ -35,7 +35,7 @@ const UpdateUser = () => {
 
     try {
       await axios.post(
-        `https://test-fullstack-backend-9431.onrender.com/updateUserWithImage/${id}`,
+        `https://test-fullstack-backend-z3jh.onrender.com/updateUserWithImage/${id}`,
         formData,
         {
           headers: {
